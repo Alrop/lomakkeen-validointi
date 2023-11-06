@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form action="#" name="form">
+        <table>
+            <tr>
+                <td>Käyttäjä ID:</td>
+                <td><input type="text" id="userId" value=""></td>
+            </tr>
+
+
+            <tr>
+                <td>Salasana: </td>
+                <td><input type="text" id="password" value=""></td>
+            </tr>
+
+            <tr>
+                <td>Nimi: </td>
+                <td><input type="text" id="name" value=""></td>
+            </tr>
+
+
+            <tr>
+                <td>Osoite:</td>
+                <td><input type="text" id="address" value=""></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="">Maa: </label></td>
+                <td><select id="country" name="countries">
+                        <option value="fi">Suomi</option>
+                        <option value="swe">Ruotsi</option>
+                    </select> </td>
+            </tr>
+
+
+            <tr>
+                <td><label for="">Postinumero: </label></td>
+                <td><input type="text" id="postcodes" name="postcode" value=""><br> <label for=""></label></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="">Sähköposti: </label></td>
+                <td><input type="text" id="email" name="" value=""><br> <label for=""></label></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="">Sukupuoli:</label></td>
+                <td>
+                    <input type="radio" name="sex"><label for="">Mies</label>
+                    <input type="radio" name="sex"><label for="">Nainen</label>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td><label for="">Kieli:</label></td>
+                <td>
+                    <input type="radio" name="lang"><label for="">Suomi</label>
+                    <input type="radio" name="lang"><label for="">Muu kuin suomi</label>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td><label for="">Lisätietoja: </label></td>
+                <td><textarea name="txtBody" id="additional" cols="50" rows="10"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="Lähetä" id="send" onclick="validator()"></td>
+            </tr>
+        </table>
+    </form>
+
+    <div id="errors"></div>
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+<script src="script.js"></script>
+
+</html>

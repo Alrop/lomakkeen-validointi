@@ -1,0 +1,21 @@
+div{
+    padding: 0.3%
+}
+
+/* label{
+    padding-right: 50px;
+}  */
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+input {
+    padding-left: 50;
+}
+table input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+}
